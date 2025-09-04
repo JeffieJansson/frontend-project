@@ -132,7 +132,8 @@ body {
   grid-template-columns: 1fr;
   /* mobile first */
   gap: 20px;
-  justify-items: center;
+  justify-self: center;
+  /*used justify-items: center ; and it made a huge gap before*/
 
 }
 
@@ -156,15 +157,7 @@ body {
   }
 }
 
-@media (min-width: 668px) {
-  .card img {
-    height: auto;
-    aspect-ratio: 16 / 9;
-    /* pick 4/3 or 3/2 if you prefer */
-    object-fit: cover;
-    object-position: center;
-  }
-}
+
 
 /* Card flexbox */
 .card {
