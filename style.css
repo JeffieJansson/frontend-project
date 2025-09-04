@@ -132,7 +132,7 @@ body {
   grid-template-columns: 1fr;
   /* mobile first */
   gap: 20px;
-  justify-self: center;
+  justify-items: center;
   /*used justify-items: center ; and it made a huge gap before*/
 
 }
