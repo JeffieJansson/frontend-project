@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
@@ -133,8 +134,6 @@ body {
   /* mobile first */
   gap: 20px;
   justify-items: center;
-  /*used justify-items: center ; and it made a huge gap before*/
-
 }
 
 .card {
@@ -143,10 +142,17 @@ body {
 }
 
 /* 2 columns on tablet */
-@media (min-width: 668px) {
+@media (min-width: 600px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
 
+  }
+}
+
+/* 4 columns on desktop */
+@media (min-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
