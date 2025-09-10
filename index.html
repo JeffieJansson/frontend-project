@@ -3,17 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NeonSound</title>
   <link rel="stylesheet" href="style.css" />
-</head>
+  <title>NeonSound</title>
+  </head>
+
 <body>
   <!-- Page grid wrapper -->
   <div class="page">
+    
     <!-- Header (Flexbox: brand left, nav right) -->
-    <header class="site-header">
-      <div class="brand">
+    <header 
+    class="site-header">
+    <div 
+      class="brand">
         NeonSound
-        <div class="sound-waves" aria-hidden="true">
+        <div 
+        class="sound-waves" 
+        aria-hidden="true">
           <div></div><div></div><div></div><div></div><div></div>
         </div>
       </div>
@@ -23,18 +29,17 @@
         <a href="#">Studios</a>
         <a href="#">Gear</a>
         <a href="#">About us</a>
-        <a href="#signup">Contact</a>
+        <a href="#">Contact</a>
       </nav>
     </header>
 
     <!-- HERO with responsive video/image -->
    <section 
-       class="hero hero-media" 
-       aria-label="NeonSound studio ambience">
+       class="hero hero-media">
      <video 
         class="hero-video" 
         autoplay muted loop playsinline poster="hero.png">
-    <source 
+      <source 
         src="hero-music-video.mp4" 
         type="video/mp4" />
     </video>
@@ -97,9 +102,8 @@
     </main>
 
     <!-- Signup Form Section -->
-    <section id="signup" class="signup" aria-labelledby="signup-title">
       <div class="container">
-        <h2 id="signup-title" class="section-title">
+        <h2>
           Sign <span class="text-blue">Up</span> for sessions &amp; news
         </h2>
 
@@ -124,9 +128,10 @@
               id="email"
               name="email"
               type="email"
-              placeholder="you@example.com"
+              placeholder="example@example.com"
               autocomplete="email"
-              required />
+              required 
+              />
           </label>
 
           <!-- Password -->
@@ -147,17 +152,30 @@
             <legend>What best describes you?</legend>
 
             <label for="role-musician">
-              <input id="role-musician" type="radio" name="role" value="musician" required />
+              <input 
+              id="role-musician" 
+              type="radio" 
+              name="role" 
+              value="musician" 
+              required />
               Musician
             </label>
 
             <label for="role-producer">
-              <input id="role-producer" type="radio" name="role" value="producer" />
+              <input 
+              id="role-producer" 
+              type="radio" 
+              name="role" 
+              value="producer" />
               Producer
             </label>
 
             <label for="role-podcaster">
-              <input id="role-podcaster" type="radio" name="role" value="podcaster" />
+              <input 
+              id="role-podcaster" 
+              type="radio" 
+              name="role" 
+              value="podcaster" />
               Podcaster
             </label>
           </fieldset>
@@ -167,32 +185,52 @@
             <legend>Interests</legend>
 
             <label for="int-recording">
-              <input id="int-recording" type="checkbox" name="interest_recording" value="recording" />
+              <input 
+              id="int-recording" 
+              type="checkbox" 
+              name="interest_recording" 
+              value="recording" />
               Recording
             </label>
 
             <label for="int-mixing">
-              <input id="int-mixing" type="checkbox" name="interest_mixing" value="mixing" />
+              <input 
+              id="int-mixing" 
+              type="checkbox" 
+              name="interest_mixing" 
+              value="mixing" />
               Mixing
             </label>
 
             <label for="int-podcasts">
-              <input id="int-podcasts" type="checkbox" name="interest_podcasts" value="podcasts" />
+              <input 
+              id="int-podcasts" 
+              type="checkbox" 
+              name="interest_podcasts" 
+              value="podcasts" />
               Podcasts
             </label>
           </fieldset>
 
           <!-- Terms (required) -->
           <label class="terms" for="terms">
-            <input id="terms" type="checkbox" name="terms" required />
+            <input 
+            id="terms" 
+            type="checkbox" 
+            name="terms" 
+            required />
             <span>I accept the terms and privacy policy</span>
           </label>
 
           <!-- Submit -->
-          <button type="submit" class="send">Sign me up</button>
+          <button 
+          type="submit" 
+          class="send">
+          Sign me up
+        </button>
         </form>
       </div>
-    </section>
+    
 
     <footer class="site-footer">
       <p>© NeonSound Studios</p>
