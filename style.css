@@ -139,13 +139,16 @@ body {
 }
 
 /* ===== HERO (responsive media) ===== */
-.hero-media {
+.hero-container {
   position: relative;
   min-height: 52vh;
   display: grid;
-  place-items: center;
   /* center overlay content */
+  place-items: center;
   border-bottom: 1px solid var(--color-border-strong);
+  /* just in case video spills */
+  overflow: hidden;
+
 }
 
 /* Video fills area; poster shows if video can’t load */
@@ -174,7 +177,7 @@ body {
 
 .hero-overlay p {
   margin: 0;
-  color: var(--color-text-muted);
+  color: var(--color-text);
 }
 
 /* ===== Main container ===== */

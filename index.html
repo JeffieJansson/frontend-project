@@ -17,14 +17,16 @@
       <div 
         class="brand">
         NeonSound
-        <div 
-        class="sound-waves" 
-        aria-hidden="true">
+      <div 
+         class="sound-waves" 
+         aria-hidden="true">
           <div></div><div></div><div></div><div></div><div></div>
         </div>
       </div>
 
-      <nav class="desktop-nav" aria-label="Huvudmeny">
+      <nav 
+        class="desktop-nav"  
+        aria-label="Huvudmeny">
         <a href="#">Home</a>
         <a href="#">Studios</a>
         <a href="#">Gear</a>
@@ -33,9 +35,14 @@
       </nav>
     </header>
 
-    <!-- HERO with responsive video/image -->
+    <!-- HERO with video/image -->
    <section 
-       class="hero hero-media">
+      class="hero-container">
+      <div class="hero-overlay">
+        <h1>Make records that glow</h1>
+        <p>Premium recording rooms, world-class gear, same-day bookings.</p>
+      </div>
+
      <video 
         class="hero-video" 
         autoplay muted loop playsinline poster="hero.png">
@@ -43,14 +50,10 @@
         src="hero-music-video.mp4" 
         type="video/mp4" />
     </video>
-      <div class="hero-overlay">
-        <h1>Make records that glow</h1>
-        <p>Premium recording rooms, world-class gear, same-day bookings.</p>
-      </div>
-    </section>
+  </section>
 
     <!-- Main content -->
-    <main class="container">
+  <main class="container">
         <h2 
         class="section-title">
         Featured studios
@@ -59,61 +62,75 @@
       <!-- Card Grid (CSS Grid) -->
     <section class="card-grid">
       <article class="card">
-          <img 
+        <img 
           src="https://plus.unsplash.com/premium_photo-1681628689764-444e8ca06570?w=600&auto=format&fit=crop&q=60" 
           alt="Live room" />
-        <div class="card-body">
-          <h3>Studio A — Live room</h3>
-          <p>Perfect for bands and live tracking with stunning room acoustics.</p>
-          <a class="btn" href="#">Book now</a>
-        </div>
+          <div class="card-body">
+            <h3>Studio A — Live room</h3>
+            <p>Perfect for bands and live tracking with stunning room acoustics.</p>
+            <a 
+             class="btn" 
+             href="#">
+             Book now
+            </a>
+          </div>
       </article>
 
-        <article class="card">
-          <img 
+      <article class="card">
+        <img 
           src="https://media.istockphoto.com/id/1990228958/photo/professional-microphone-on-the-stand-recording-studio-with-acoustical-wall-panel.webp?a=1&b=1&s=612x612&w=0&k=20&c=Gj81pWhucUwMZpH_19TpRPjMxQ94rV6ouvU1IX8Uk3Q=" 
           alt="Vocal suite" />
           <div class="card-body">
             <h3>Studio B — Vocal suite</h3>
             <p>Tailored for vocals, VO and topline sessions with zero noise floor.</p>
-            <a class="btn" href="#">Book now</a>
+            <a 
+              class="btn" 
+              href="#">
+              Book now
+            </a>
           </div>
-        </article>
+      </article>
 
-        <article class="card">
-          <img 
+      <article class="card">
+        <img 
           src="https://plus.unsplash.com/premium_photo-1682124293900-54bea8ca7e9f?w=600&auto=format&fit=crop&q=60" 
           alt="Mix room" />
           <div class="card-body">
             <h3>Studio C — Mix room</h3>
             <p>Accurate monitoring for mixing, mastering and sound design.</p>
-            <a class="btn" href="#">Book now</a>
+            <a 
+              class="btn" 
+              href="#">
+              Book now
+            </a>
           </div>
-        </article>
+      </article>
 
-        <article class="card">
-          <img 
+      <article class="card">
+        <img 
           src="https://images.unsplash.com/photo-1613329671121-5d1cf551cc3f?w=600&auto=format&fit=crop&q=60" 
           alt="Podcast room" />
           <div class="card-body">
             <h3>Podcast room</h3>
             <p>Plug-and-play podcast production with multitrack capture.</p>
-            <a class="btn" href="#">Book now</a>
+            <a 
+              class="btn" 
+              href="#">
+              Book now
+            </a>
           </div>
-        </article>
-      </section>
-    </main>
+      </article>
+    </section>
+  </main>
 
     <!-- Signup Form Section -->
-      <div class="container">
-        <h2>
-          Sign <span class="text-blue">Up</span> for sessions &amp; news
-        </h2>
-
+        <div class="container">
+        <h2>Sign <span class="text-blue">Up</span> for sessions &amp; news</h2>
         <form 
-            class="signup-form" 
-            action="https://httpbin.org/anything" 
-            method="post">
+              class="signup-form" 
+              action="https://httpbin.org/anything" 
+              method="post">
+
           <!-- Full name -->
           <label>
             <span>Full name</span>
@@ -123,7 +140,8 @@
               type="text"
               placeholder="Your name"
               autocomplete="name"
-              required />
+              required 
+              />
           </label>
 
           <!-- Email -->
@@ -149,89 +167,95 @@
               placeholder="Min. 6 characters"
               minlength="6"
               autocomplete="new-password"
-              required />
+              required 
+              />
           </label>
 
           <!-- Radio group -->
-          <fieldset class="choice-group">
-            <legend>What best describes you?</legend>
-
-            <label for="role-musician">
-              <input 
+      <fieldset class="choice-group">
+        <legend>What best describes you?</legend>
+          <label for="role-musician">
+            <input 
               id="role-musician" 
               type="radio" 
               name="role" 
               value="musician" 
-              required />
+              required 
+              />
               Musician
-            </label>
+          </label>
 
-            <label for="role-producer">
-              <input 
+          <label for="role-producer">
+            <input 
               id="role-producer" 
               type="radio" 
               name="role" 
               value="producer" />
               Producer
-            </label>
+          </label>
 
-            <label for="role-podcaster">
-              <input 
+          <label for="role-podcaster">
+            <input 
               id="role-podcaster" 
               type="radio" 
               name="role" 
-              value="podcaster" />
+              value="podcaster" 
+              />
               Podcaster
-            </label>
-          </fieldset>
+          </label>
+      </fieldset>
 
           <!-- Checkbox group (optional interests) -->
-          <fieldset class="choice-group">
-            <legend>Interests</legend>
-
-            <label for="int-recording">
-              <input 
+          
+      <fieldset class="choice-group">
+        <legend>Interests</legend>
+          <label for="int-recording">
+            <input 
               id="int-recording" 
               type="checkbox" 
               name="interest_recording" 
-              value="recording" />
+              value="recording" 
+              />
               Recording
-            </label>
+          </label>
 
-            <label for="int-mixing">
-              <input 
+          <label for="int-mixing">
+            <input 
               id="int-mixing" 
               type="checkbox" 
               name="interest_mixing" 
-              value="mixing" />
+              value="mixing" 
+              />
               Mixing
-            </label>
+          </label>
 
-            <label for="int-podcasts">
-              <input 
+          <label for="int-podcasts">
+            <input 
               id="int-podcasts" 
               type="checkbox" 
               name="interest_podcasts" 
-              value="podcasts" />
+              value="podcasts" 
+              />
               Podcasts
-            </label>
-          </fieldset>
+          </label>
+      </fieldset>
 
           <!-- Terms (required) -->
           <label class="terms" for="terms">
             <input 
-            id="terms" 
-            type="checkbox" 
-            name="terms" 
-            required />
+              id="terms" 
+              type="checkbox" 
+              name="terms" 
+              required 
+              />
             <span>I accept the terms and privacy policy</span>
           </label>
 
           <!-- Submit -->
           <button 
-          type="submit" 
-          class="send">
-          Sign me up
+            type="submit" 
+            class="send">
+            Sign me up
           </button>
         </form>
       </div>
@@ -239,6 +263,7 @@
     <footer class="site-footer">
       <p>© NeonSound Studios</p>
     </footer>
+  
   </div>
 </body>
 </html>
