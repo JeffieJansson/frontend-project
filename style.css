@@ -334,7 +334,7 @@ body {
   box-shadow: 0 0 6px rgba(122, 92, 255, .5);
 }
 
-/* Radios / Checkboxes group */
+/* Radio group */
 .choice-group {
   border: 1px dashed var(--color-border);
   border-radius: 8px;
