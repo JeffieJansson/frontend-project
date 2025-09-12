@@ -6,9 +6,11 @@
   --color-text-muted: #b7bdd3;
   --color-text-ui: #cfd3f5;
   --color-footer: #9aa2c9;
-
-  /* surfaces & borders */
-  --color-border-strong: #1e1e2a;
+  --color-text-p: #fff;
+  --color-form: rgba(20, 20, 28, 0.9);
+  --color-box-shadow: rgba(122, 92, 255, 0.25)
+    /* surfaces & borders */
+    --color-border-strong: #1e1e2a;
   --color-border: #343457;
   --color-panel: #1a1a2b;
   --color-panel-hover: #23233a;
@@ -55,7 +57,7 @@ body {
   align-items: center;
   gap: 10px;
   /* space between text and sound waves */
-  color: #fff;
+  color: var(--color-text-p);
   font-weight: bold;
   font-size: 20px;
 }
@@ -119,7 +121,7 @@ body {
 }
 
 .desktop-nav a {
-  color: #fff;
+  color: var(--color-text-p);
   text-decoration: none;
   padding: 6px 8px;
   border-radius: 6px;
@@ -173,6 +175,7 @@ body {
 .hero-overlay h1 {
   margin: 0 0 10px;
   font-size: clamp(28px, 4vw, 48px);
+  color: var(--color-text-p);
 }
 
 .hero-overlay p {
@@ -188,7 +191,7 @@ body {
 }
 
 .section-title {
-  color: #fff;
+  color: var(--color-text-p);
   text-align: center;
   margin: 0 0 14px;
 }
@@ -252,7 +255,7 @@ body {
 
 .card h3 {
   margin: 0 0 8px;
-  color: #fff;
+  color: var(--color-text-p);
 }
 
 .card p {
@@ -266,7 +269,7 @@ body {
 .send {
   display: inline-block;
   background: var(--color-panel);
-  color: #fff;
+  color: var(--color-text-p);
   text-decoration: none;
   padding: 10px 14px;
   border-radius: 8px;
@@ -279,16 +282,13 @@ body {
   transform: translateY(-1px);
   background: var(--color-panel-hover);
   border-color: var(--color-accent-2);
-  box-shadow: 0 6px 14px rgba(122, 92, 255, .25);
+  box-shadow: 0 6px 14px var(--color-box-shadow);
 }
 
 /* ===== Signup Form (Flexbox layout) ===== */
-.text-blue {
-  color: var(--color-accent-2);
-}
 
 .signup-form {
-  background: rgba(20, 20, 28, 0.9);
+  background: var(--color-form);
   border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: 24px;
@@ -296,14 +296,16 @@ body {
   max-width: 480px;
 
   display: flex;
-  /* vertical form layout */
   flex-direction: column;
   gap: 12px;
 
-  box-shadow: 0 8px 20px rgba(122, 92, 255, 0.25);
-  color: #fff;
+  box-shadow: 0 8px 20px var(--color-box-shadow);
+  color: var(--color-text-p);
 }
 
+.text-blue {
+  color: var(--color-accent-2);
+}
 
 .signup-form label {
   display: flex;
@@ -313,14 +315,14 @@ body {
   font-size: 14px;
 }
 
-/* Inputs (DRY: match all except radios/checkboxes) */
+/* Inputs (except radios/checkboxes) */
 .signup-form input:not([type="radio"]):not([type="checkbox"]) {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--color-border);
   border-radius: 6px;
   background: var(--color-panel);
-  color: #fff;
+  color: var(--color-text-p);
   font-size: 14px;
   font-family: inherit;
 }
